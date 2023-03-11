@@ -1,0 +1,84 @@
+body {
+  background-color: #001f24;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(245, 245, 245);
+  border-bottom: 5px solid rgb(245, 245, 245);
+  width: 500px;
+  margin: 50px auto;
+}
+.click {
+  background-color: rgb(250, 240, 230);
+  width: 475px;
+  height: 25px;
+  padding: 15px;
+  margin: 5px auto;
+  border-radius: 2px;
+  border: 1px solid rgb(255, 230, 0);
+  color: #001f24;
+  font-size: 20px;
+}
+.imageInput {
+  width: 350px;
+  height: 25px;
+  background-color: rgb(250, 240, 230);
+  border: 0;
+  font-size: 18px;
+  color: #001f24;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  color: #001f24;
+}
+.image {
+  width: 20px;
+  float: right;
+  margin-left: 15px;
+  cursor: pointer;
+  display: flex;
+}
+
+/* cl title */
+#textTitle {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+  color: rgb(245, 245, 245);
+}
+
+/*clock*/
+#clock {
+  text-align: center;
+  color: rgb(250, 240, 230);
+}
+/*input*/
+.input {
+  width: 80%;
+  height: 10px;
+  font-size: 18px;
+  padding: 18px;
+  background-color: rgb(250, 240, 230);
+}
+
+/*div*/
+.div {
+  text-align: center;
+  display: flex;
+  width: 500px;
+  margin: 10px auto;
+}
+
+/*button*/
+#btn {
+  margin: 0;
+  font-size: 18px;
+  width: 50px;
+  padding: 10px;
+  background-color: rgb(255, 140, 0);
+}

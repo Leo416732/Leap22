@@ -1,0 +1,44 @@
+.qe {
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 500px;
+}
+.qe:hover,
+.select:hover {
+  box-shadow: 5px 5px rgb(171, 196, 196);
+  cursor: pointer;
+}
+.submit {
+  background-color: rgb(171, 196, 196);
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 60px;
+  transition: 1s;
+}
+.submit:hover {
+  width: 300px;
+  transition: all 1s ease-out;
+}
+.submit:active {
+  width: 80px;
+}
+.select {
+  margin-bottom: 30px;
+  transition: 0.3s;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  width: 600px;
+}
+.select input,
+textarea {
+  display: block;
+  margin-top: 20px;
+}
+.select input {
+  transition: 1s;
+}

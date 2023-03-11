@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.overflow {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+
+.card:hover .overflow {
+  transform: translate(-100%, -100%);
+  transition: all 1s;
+}

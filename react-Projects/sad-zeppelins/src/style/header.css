@@ -1,0 +1,21 @@
+.header-img {
+  height: 36px;
+  width: 220px;
+}
+.hire-img {
+  height: 24px;
+  width: 90px;
+}
+header .nav-link {
+  height: 17px;
+  font-size: 14px;
+  padding: 0;
+}
+.header-navbar {
+  justify-content: space-between;
+  padding: 22px;
+  margin-bottom: 140px;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}

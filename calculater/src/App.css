@@ -1,0 +1,107 @@
+body{
+  background-color: #202124;
+}
+.App{
+  margin: 100px auto;
+  width: 315px;
+}
+
+.number{
+  width: 350px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.number button{
+  font-size: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #70757a;
+}
+.number button:active{
+  background-color: #616367;
+}
+.input{
+  width: 94.5%;
+  min-height: 50px;
+  overflow: auto;
+  font-size: 30px;
+  border: 1px solid #ccc;
+  background-color: #202124;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.operator{
+  width: 350px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.operator button{
+  width: 72.5px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #3f3f40;
+  font-size: 20px;
+}
+.operator button:active{
+  background-color: #323235;
+}
+.calculate button{
+  width: 101.5%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border:  none;
+  margin-top: 10px;
+}
+.calculate button:active{
+  background-color: #616367;
+}
+.nav{
+  width: 350px;
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.nav button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #0e0e0e;
+  font-size: 20px;
+}
+.nav button:active{
+  background-color: #000000;
+}
+.zero{
+  width: 350px;
+  display: flex;
+  gap: 10px;
+}
+.zero .zero-btn{
+  margin-top: 10px;
+  font-size: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #70757a;
+}
+.zero .hidden{
+  margin-top: 10px;
+  font-size: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: #202124;
+  background-color: #202124;
+}

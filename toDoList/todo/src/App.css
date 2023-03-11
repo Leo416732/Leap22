@@ -1,0 +1,65 @@
+.App{
+  text-align: center;
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+img{
+  width: 20px;
+}
+.container {
+  width: 400px;
+  margin: 50px auto;
+}
+.input{
+  width: 92.5%;
+  margin: 0 auto;
+  height: 20px;
+  font-size: 18px;
+  border: 2px solid rgb(162, 158, 158);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+ul{
+  padding: 0;
+}
+
+.btn{
+  width: 96%;
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 18px;
+}
+.btn:active{
+  background-color: rgb(67, 14, 116);
+}
+.add{
+  border: 1px solid #ccc;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.todo-btn{
+  padding: 0;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.checkbox{
+  height: 23px;
+  width: 23px;
+  margin: 0;
+}
+.todo-list{
+  margin-left: 10px;
+}

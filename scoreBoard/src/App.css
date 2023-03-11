@@ -1,0 +1,50 @@
+.Headr {
+  display: flex;
+  border: 1px solid black;
+}
+.App {
+  width: 500px;
+  margin: 100px auto;
+}
+.titl-btn {
+  height: 30px;
+  margin: auto;
+  width: 100px;
+}
+.prop {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(90, 89, 89);
+}
+.prop .btnQ {
+  float: right;
+  display: flex;
+  width: 100px;
+  padding: 5px;
+}
+.prop .btnQ button {
+  color: #fff;
+  font-size: 20px;
+}
+label {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.name {
+  width: 100px;
+}
+.number {
+  width: 20px;
+  padding: 0 10px;
+}
+.login {
+  display: block;
+  text-align: center;
+}
+.login input {
+  width: 100%;
+  margin: 10px 0;
+}
+.login button {
+  justify-content: center;
+}

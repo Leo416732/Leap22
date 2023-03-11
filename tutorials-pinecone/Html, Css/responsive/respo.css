@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  box-shadow: 2px 2px #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.main {
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.button {
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.card {
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card img {
+  max-width: 200px;
+  min-width: 150px;
+  border-radius: 20px;
+}
+.card-right {
+  background-color: #ccc;
+  padding: 30px;
+  border-radius: 10px;
+}
+.text a {
+  color: black;
+  font-size: 28px;
+}
+.text a:hover {
+  color: rgb(18, 125, 125);
+}
+
+.right-top {
+  display: flex;
+  gap: 20px;
+}
+.section div {
+  display: flex;
+  gap: 20px;
+}
+h1 {
+  color: rgb(157, 101, 11);
+}
+h3 {
+  font-size: 25px;
+}
+.section p {
+  width: 200px;
+  font-size: 15px;
+  color: rgb(4, 52, 36);
+}
+.second-section img {
+  max-width: 60%;
+  border-radius: 20px;
+  float: left;
+  margin: 20px;
+}
+.bottom {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bottom .input {
+  width: 100%;
+  min-width: 100px;
+  height: 50px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccc;
+  padding: 40px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .card {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .second-section img {
+    float: none;
+    max-width: 100%;
+  }
+  .text {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 340px) {
+  .logo {
+    width: 60%;
+    padding-left: 40px;
+  }
+
+  .main {
+    display: block;
+  }
+  .button {
+    width: 20%;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .header-right {
+    width: 100%;
+    order: 1;
+  }
+  .card-right {
+    margin-top: 100px;
+  }
+  .right-top {
+    display: block;
+  }
+  .second-section img {
+    float: none;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px 50px 90px;
+  padding: 10px;
+  gap: 10px;
+  background-color: aqua;
+}
+.container div {
+  text-align: center;
+  padding: 20px 0;
+  background-color: antiquewhite;
+}
+#delay_demo2 {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin: 50px auto;
+  border: 2px #aaa solid;
+}
+
+#delay_demo2 div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 210px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#normal1 {
+  z-index: 7;
+  background-color: rgb(59, 219, 51);
+  transition: all 1s ease-in-out;
+  transition-property: left, background, bottom;
+  transition-duration: 1s, 2s, 3s;
+}
+
+#normal2 {
+  z-index: 8;
+  background-color: rgb(216, 109, 22);
+  transition: all 1s ease-in-out;
+  transition-property: bottom, background, right;
+  transition-duration: 5s, 5s, 5s;
+}
+
+#delay_demo2 div p {
+  line-height: 70px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#example1 {
+  z-index: 9;
+  background-color: rgb(55, 30, 220);
+  transition-property: top, left;
+  transition-duration: 1s, 1s, 1s;
+  transition-delay: 0s, 1s, 1s;
+  transition: all 1s ease-in-out;
+}
+
+#example2 {
+  z-index: 10;
+  background-color: rgb(123, 23, 23);
+  transition-property: bottom, left;
+  transition-duration: 2s, 10s, 10s;
+  transition-delay: 0s, 1s, 1s;
+  transition: all 1s ease-in-out;
+}
+
+#delay_demo2:hover #normal1 {
+  top: 0;
+  left: 0;
+  transition-property: top, background, left;
+  transition-duration: 1s, 2s, 2s;
+  cursor: pointer;
+}
+
+#delay_demo2:hover #normal2 {
+  top: 296px;
+  left: 0;
+  transition-property: top, left;
+  transition-duration: 1s, 2s;
+  cursor: pointer;
+}
+
+#delay_demo2:hover #example1 {
+  top: 296px;
+  left: 396px;
+  transition-property: top, left;
+  transition-duration: 1s, 2s;
+  background-color: black;
+}
+#delay_demo2:hover #example2 {
+  top: 0;
+  left: 396px;
+  transition-property: top, left;
+  transition-duration: 1s, 2s;
+  background-color: rgb(220, 226, 33);
+  border-radius: 10px;
+}

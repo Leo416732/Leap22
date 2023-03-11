@@ -1,0 +1,18 @@
+.aside{
+    display: none;
+    border-right: 1px solid rgb(202, 200, 200);
+}
+.aside li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+.aside a{
+    text-decoration: none;
+    color: rgb(78, 75, 75);
+    font-size: 14px;
+}
+@media screen and (min-width: 640px) {
+    .aside{
+        display: inline;
+    }
+}

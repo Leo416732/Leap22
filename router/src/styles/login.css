@@ -1,0 +1,37 @@
+.Login{
+    background-color: #62418d;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.Login form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.register{
+    width: 100%;
+    color: #0275d8;
+}
+.Login form input{
+    padding: 5px;
+    border-radius: 5px;
+}
+p{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.Login form button{
+    background-color: #0275d8;
+    color: #fff;
+    border: none;
+}
+.Login button:active{
+    background-color: #065aa3;
+}

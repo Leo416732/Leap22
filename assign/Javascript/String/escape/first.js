@@ -1,0 +1,1 @@
+console.log("Hello im here \nIm 18 years old \n \  This is paragraph ")

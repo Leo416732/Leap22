@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Mobicom</title>
+    
+  </head>
+  <body>
+    <header class="position-fixed" style="z-index: 20; width: 100%">
+      <nav class="navbar navbar-expand-lg  bg-secondary">
+        <div class="container-fluid d-none d-md-flex">
+          <div class="collapse navbar-collapse fs-6" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-black-50" href="#">Costumer</a>
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Corporate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">monpay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">VOO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Support</a>
+              </li>
+            </ul>
+            <div class="navbar-text d-none d-md-flex">MNG</div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="https://www.mobicom.mn/build/assets/31c267a2f9f62512211e33aed7f060b0.png" alt="" style="width: 100px;">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="btn btn-white position-relative">
+                  Promotion
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    6
+                  <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item ps-2">
+                <a class="nav-link active" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" data-inject-url="https://www.mobicom.mn/build/assets/dd75d8007592eb3928c3691e2d251294.svg" style="margin-top: -3px; vertical-align: middle;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Online shop
+                </a>
+              </li>
+              <li class="nav-item ps-2">
+                <a class="nav-link active" href="#">Find a store</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-none d-sm-flex" role="search">
+            <input
+              class="form-control me-3"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <div class="position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart" data-inject-url="https://www.mobicom.mn/build/assets/630af4013de8bee3772278ebf075f334.svg" style="vertical-align: middle;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            6
+          <span class="visually-hidden">unread messages</span>
+          </div>
+          <button class="btn btn-danger ms-3">Login</button>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- main style -->
+    <main style="padding-top: 100px">
+      <div class="first section row mt-5">
+        <div class="d-none d-md-flex col-md-12 col-lg-8">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://stat.mobicom.mn/resources/content/1250X600_mobi_banner-2022-11-16-095410-933166121.png"
+                  class="d-block w-100"
+                  style="max-height: 800px; min-height: 600px;"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://stat.mobicom.mn/resources/content/red magic mobicom.mn 1250x600-2022-10-20-175002-1328959611.png"
+                  class="d-block w-100"
+                  style="max-height: 800px; min-height: 600px;"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://stat.mobicom.mn/resources/content/mobicom.mn banner iPhone 14 1250x600-2022-10-27-164501-2025326689.png"
+                  class="d-block w-100"
+                  style="height: 400px;"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 p-lg-5">
+          <div class="row gap-3 mb-4 ms-3">
+            <h3 class="text-secondary">Quick actions:</h3>
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <path
+                  d="M20 13V27"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13 20H27"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <h5>Unit</h5>
+              <p class="text-secondary">buy</p>
+            </div>
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/631027d5a905abbf95413b832aced700.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <path
+                  d="M19.9979 22C21.1025 22 21.9979 21.1046 21.9979 20C21.9979 18.8954 21.1025 18 19.9979 18C18.8934 18 17.9979 18.8954 17.9979 20C17.9979 21.1046 18.8934 22 19.9979 22Z"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M24.2379 15.7599C24.7957 16.3172 25.2383 16.9789 25.5402 17.7073C25.8422 18.4357 25.9976 19.2164 25.9976 20.0049C25.9976 20.7934 25.8422 21.5742 25.5402 22.3026C25.2383 23.031 24.7957 23.6927 24.2379 24.2499M15.7579 24.2399C15.2 23.6827 14.7575 23.021 14.4555 22.2926C14.1536 21.5642 13.9981 20.7834 13.9981 19.9949C13.9981 19.2064 14.1536 18.4257 14.4555 17.6973C14.7575 16.9689 15.2 16.3072 15.7579 15.7499M27.0679 12.9299C28.9426 14.8052 29.9957 17.3483 29.9957 19.9999C29.9957 22.6516 28.9426 25.1947 27.0679 27.0699M12.9279 27.0699C11.0532 25.1947 10 22.6516 10 19.9999C10 17.3483 11.0532 14.8052 12.9279 12.9299"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M20 22V29"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <h5>Data</h5>
+              <p class="text-secondary">buy</p>
+            </div>
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/641437a0de63ef268535839ddfdf5d6e.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <rect
+                  x="20"
+                  y="16"
+                  width="9"
+                  height="8"
+                  rx="2"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                ></rect>
+                <path
+                  d="M28 16V14C28 12.8954 27.1046 12 26 12H13C11.8954 12 11 12.8954 11 14V26C11 27.1046 11.8954 28 13 28H26C27.1046 28 28 27.1046 28 26V24"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                ></path>
+                <path
+                  d="M23 20H24"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <h5>Unit</h5>
+              <p class="text-secondary">buy</p>
+            </div>
+          </div>
+          <div class="row gap-3 ms-3">
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <path
+                  d="M20 13V27"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13 20H27"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <h4>Unit</h4>
+              <p>buy</p>
+            </div>
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/631027d5a905abbf95413b832aced700.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <path
+                  d="M19.9979 22C21.1025 22 21.9979 21.1046 21.9979 20C21.9979 18.8954 21.1025 18 19.9979 18C18.8934 18 17.9979 18.8954 17.9979 20C17.9979 21.1046 18.8934 22 19.9979 22Z"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M24.2379 15.7599C24.7957 16.3172 25.2383 16.9789 25.5402 17.7073C25.8422 18.4357 25.9976 19.2164 25.9976 20.0049C25.9976 20.7934 25.8422 21.5742 25.5402 22.3026C25.2383 23.031 24.7957 23.6927 24.2379 24.2499M15.7579 24.2399C15.2 23.6827 14.7575 23.021 14.4555 22.2926C14.1536 21.5642 13.9981 20.7834 13.9981 19.9949C13.9981 19.2064 14.1536 18.4257 14.4555 17.6973C14.7575 16.9689 15.2 16.3072 15.7579 15.7499M27.0679 12.9299C28.9426 14.8052 29.9957 17.3483 29.9957 19.9999C29.9957 22.6516 28.9426 25.1947 27.0679 27.0699M12.9279 27.0699C11.0532 25.1947 10 22.6516 10 19.9999C10 17.3483 11.0532 14.8052 12.9279 12.9299"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M20 22V29"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <h4>Data</h4>
+              <p>buy</p>
+            </div>
+            <div class="border rounded-4 p-3" style="width: 28%; height: 130px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                data-inject-url="https://www.mobicom.mn/build/assets/641437a0de63ef268535839ddfdf5d6e.svg"
+                svg=""
+                class="text-primary"
+                style="margin-bottom: 5px; vertical-align: middle"
+              >
+                <rect
+                  width="40"
+                  height="40"
+                  rx="20"
+                  fill="#ED1C24"
+                  fill-opacity="0.08"
+                ></rect>
+                <rect
+                  x="20"
+                  y="16"
+                  width="9"
+                  height="8"
+                  rx="2"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                ></rect>
+                <path
+                  d="M28 16V14C28 12.8954 27.1046 12 26 12H13C11.8954 12 11 12.8954 11 14V26C11 27.1046 11.8954 28 13 28H26C27.1046 28 28 27.1046 28 26V24"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                ></path>
+                <path
+                  d="M23 20H24"
+                  stroke="#ED1C24"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <h4>Unit</h4>
+              <p>buy</p>
+            </div>
+            <div class="col-11 m-0 p-0">
+              <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="">
+                      <img
+                      src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                      class="d-block w-100 rounded-top"
+                      alt="..."
+                    />
+                    <h4 class="p-3 rounded-bottom border">Buy nokio</h4>
+                    </a>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <a href="">
+                      <img
+                      src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                      class="d-block w-100 rounded-top"
+                      alt="..."
+                    />
+                    <h4 class="p-3 rounded-bottom border">Nokio sell </h4>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                      <img
+                      src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
+                      class="d-block w-100 rounded-top"
+                      alt="..."
+                    />
+                    <h4 class="p-3 rounded-bottom border">Buy samsung nokio</h4>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second section container-lg d-none d-sm-block">
+        <div class="row mt-5">
+          <h3 class="col-10">News</h3>
+          <p class="col-2">Learn more</p>
+        </div>
+        <div class="row d-flex">
+          <div class="col-lg-3 col-12">
+            <div class="py-3">
+              <img
+                src="https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="py-3">
+              <img
+                src="https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="py-3">
+              <img
+                src="https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="py-3">
+              <img
+                src="https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-lg-flex d-block">
+          <div class="col-12 col-lg-6">
+            <div class="p-3">
+              <img
+                src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="p-3">
+              <img
+                src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  corporis dolor distinctio voluptatem minima, praesentium
+                  cumque
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last section card rounded-0 border-0 bg-secondary">
+        <h2 class="text-center mt-5 mb-5">The apps that make your life easier</h2>
+        <div class="d-flex flex-wrap gap-4 mb-5 container justify-content-around px-5" style="margin: 0 auto">
+          <a href="" class=" ps-sm-0 col-sm-2 item text-decoration-none text-dark text-center"
+            ><img
+              class="rounded-5 "
+              style="height: 90px; width: 90px;"
+              src="https://www.mobicom.mn/build/assets/93288a013385b9e712007b482d53dd9d.svg"
+            />
+            <p class="title text-center">Мобиком</p></a
+          >
+          <a href="" class=" ps-sm-0 col-sm-2 item text-decoration-none text-dark text-center"
+            ><img
+              class="rounded-5"
+              style="height: 90px"
+              src="https://www.mobicom.mn/build/assets/3e97249614785b49a444e1c3d8c338d9.svg"
+            />
+            <p class="title text-center">monpay</p></a
+          >
+          <a href="" class=" col-sm-2 item text-decoration-none text-dark text-center"
+            ><img
+              class="rounded-5"
+              style="height: 90px"
+              src="https://www.mobicom.mn/build/assets/33687c97ee54c2ba35f8a3e31e856127.svg"
+            />
+            <p class="title text-center">VOO</p></a
+          >
+          <a href="" class="col-12 text-center col-sm-2 item text-decoration-none text-dark text-center"
+            ><img
+              class="rounded-5"
+              style="height: 90px"
+              src="https://www.mobicom.mn/build/assets/09d85c3a84ef7522bd8fc3fcfc243e78.svg"
+            />
+            <p class="title text-center">Magic voice</p></a
+          >
+        </div>
+      </div>
+    </main>
+    <!-- main style end -->
+
+
+    <!-- desktop and tablet footer -->
+    <footer class="container-fluid bg-secondary mt-5 pt-5 pb-5 d-none d-sm-block">
+      <div class="container">
+        <div class="row border-bottom border-dark">
+          <div class="col-5">
+            <h4>About us</h4>
+            <ul class="list-unstyled">
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h5>About us</h5>
+            <ul class="list-unstyled">
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>About us</h5>
+            <ul class="list-unstyled">
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+              <li>hello</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-9 ">© 1996 - 2022 MOBICOM CORPORATION</div>
+          <div class="col-3 d-flex gap-3">
+            <a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg></a>
+            <a href="" class="text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </a>
+            <a href="" class="text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+            </a>
+            <a href="" class="text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- desktop and tablet footer end -->
+
+
+    <!-- phone -->
+    <footer class="phone bg-secondary mt-5 d-block d-sm-none">
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              About us
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Support
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Contact us
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      <div class="justify-content-between d-flex mt-4" style="width: 30%; margin: 0 auto;">
+        <a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg></a>
+        <a href="" class="text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a>
+        <a href="" class="text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>
+        </a>
+        <a href="" class="text-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="text-center pb-5 pt-5">© 1996 - 2022 MOBICOM CORPORATION</div>
+    </footer>
+    <!-- phone footer end -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
